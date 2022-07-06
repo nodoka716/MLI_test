@@ -1,0 +1,128 @@
+[ AutoCAD - Wed Jul 06 10:13:46 2022  ]----------------------------------------
+No duplicate nodes or insulation nodalization warnings found
+
+Calculating SINDA/FLUINT data
+Face Contactor[MAIN][0]::31E
+From areas = 360000., To areas = 105200.
+This may be indicative of incorrect from-to surfaces
+Note that the 'to' area is only single sided in the calculation
+
+ContactorData\Warnings_MAIN_31E.txt contains warnings
+Face Contactor[MAIN][0]::31F
+From areas = 360000., To areas = 105000.
+This may be indicative of incorrect from-to surfaces
+Note that the 'to' area is only single sided in the calculation
+
+ContactorData\Warnings_MAIN_31F.txt contains warnings
+Calculating Thermal Analyzer Input took 0.43 sec
+
+Outputting SINDA/FLUINT data
+Outputting data for submodel GLOBAL...
+Outputting data for submodel HEATER1501...
+Outputting data for submodel HEATER1509...
+Outputting data for submodel HEATLOAD1...
+Outputting data for submodel KIKI1...
+Outputting data for submodel KIKI2...
+Outputting data for submodel KIKI3...
+Outputting data for submodel MAIN...
+Outputting data for submodel MINUS_X...
+Outputting data for submodel MINUS_Y...
+Outputting data for submodel MINUS_Z...
+Outputting data for submodel PLUS_X...
+Outputting data for submodel PLUS_Y...
+Outputting data for submodel PLUS_Z...
+Outputting data for submodel SPACE...
+    Number of nodes:      27
+    Number of conductors: 71
+    
+Total Nodal Mass = 28.815203 kg
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database External-orbit-RcOptics.rch
+Database already exists, checking to see if the model has changed...
+Using regular optical properties
+Restart was successful. No calculations were performed.
+
+
+*** RADCAD RAYTRACE RADK RUN START for database External-RcOptics.rck
+Database already exists, checking to see if the model has changed...
+Using regular optical properties
+Restart was successful. No calculations were performed.
+    14 calculation nodes
+    14 radks were output, 0 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in External
+
+
+*** RADCAD RAYTRACE RADK RUN START for database Internal-RcOptics.rck
+Database already exists, checking to see if the model has changed...
+Using regular optical properties
+Restart was successful. No calculations were performed.
+    17 calculation nodes
+    135 radks were output, 1 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+    2 nodes(11%) have Bij Inactive > .2
+        This may be ok, but may be an indication of an incorrect active side
+     
+    Note that overlapping surfaces cause INCORRECT and INCONSISTENT results.
+    Node MINUS_Y.1501::2CA is overlapped by KIKI3.103 covering   36%
+    Node MINUS_Y.1509::2C6 is overlapped by KIKI1.101 covering   16%
+    Node MINUS_Y.1509::2C6 is overlapped by KIKI2.102 covering   16%
+    Note that overlapping surfaces cause INCORRECT and INCONSISTENT results.
+
+*** Running SINDA model named C:\Users\81903\Documents\Thermal Desktop\op3\MLItest_MSSmodel\Insulation\case2.inp
+Successful completion of processor
+From C:\Users\81903\Documents\Thermal Desktop\op3\MLItest_MSSmodel\Insulation\messages_case2.log
+     LOOPCT =             102  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL MINUS_X WERE OSCILLATING AS OF LOOPCT =    102
+     LOOPCT =             102                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             102                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             102                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             102  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL MINUS_Z WERE OSCILLATING AS OF LOOPCT =    102
+     LOOPCT =             102                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             102                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             102                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             102  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL PLUS_X WERE OSCILLATING AS OF LOOPCT =    102
+     LOOPCT =             102                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             102                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             102                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             102  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL PLUS_Y WERE OSCILLATING AS OF LOOPCT =    102
+     LOOPCT =             102                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             102                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             102                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             108  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL KIKI1 WERE OSCILLATING AS OF LOOPCT =    108
+     LOOPCT =             108                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             108                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             108                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             108  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL KIKI2 WERE OSCILLATING AS OF LOOPCT =    108
+     LOOPCT =             108                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             108                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             108                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             108  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL KIKI3 WERE OSCILLATING AS OF LOOPCT =    108
+     LOOPCT =             108                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             108                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             108                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             109  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL PLUS_Z WERE OSCILLATING AS OF LOOPCT =    109
+     LOOPCT =             109                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             109                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             109                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             112  *** WARNING ***   MORE THAN HALF THE NODES IN SUBMODEL MINUS_Y WERE OSCILLATING AS OF LOOPCT =    112
+     LOOPCT =             112                    HEAVY DAMPING (ITERXT=0, EXTLIM=0.5) WAS APPLIED.
+     LOOPCT =             112                    IF SUCCESSFUL, CONSIDER THESE SETTINGS IN CONTROL DATA.
+     LOOPCT =             112                    OTHERWISE, IDENTIFY AND CORRECT THE SOURCE OF OSCILLATIONS.
+     LOOPCT =             115Heater[HEATER1501]::343:
+     LOOPCT =             115    Steady State Proportional Heater Power Required:
+     LOOPCT =             115            2.99133811810836      W
+     LOOPCT =             115    WARNING::Sense Temp Less Than On Temp
+     LOOPCT =             115         Sense=   248.840636649245          On Temp=   273.150000000000
+     LOOPCT =             115Heater[HEATER1509]::344:
+     LOOPCT =             115    Steady State Proportional Heater Power Required:
+     LOOPCT =             115            9.97112706036121      W
+     LOOPCT =             115    WARNING::Sense Temp Less Than On Temp
+     LOOPCT =             115         Sense=   248.924803100582          On Temp=   273.150000000000
+     TIMEN  =    50000.00      The ASTAP execution time is:    3.39825670002028       seconds
+Time to run SINDA = 14.95 sec
+
+Case Set Solved::Elapsed time = 16.58 sec

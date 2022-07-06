@@ -1,0 +1,21 @@
+Note that overlapping surfaces cause INCORRECT and INCONSISTENT results.
+Node MINUS_Y.1501::2CA is overlapped by MINUS_Y.1501 covering  100%%
+Node MINUS_Y.1501::380 is overlapped by MINUS_Y.1501 covering  100%%
+Node MINUS_Y.1502::2CB is overlapped by MINUS_Y.1502 covering  100%%
+Node MINUS_Y.1502::381 is overlapped by MINUS_Y.1502 covering  100%%
+Node MINUS_Y.1503::2CC is overlapped by MINUS_Y.1503 covering  100%%
+Node MINUS_Y.1503::382 is overlapped by MINUS_Y.1503 covering  100%%
+Node MINUS_Y.1504::2C7 is overlapped by MINUS_Y.1504 covering  100%%
+Node MINUS_Y.1504::37D is overlapped by MINUS_Y.1504 covering  100%%
+Node MINUS_Y.1505::2C8 is overlapped by MINUS_Y.1505 covering  100%%
+Node MINUS_Y.1505::37E is overlapped by MINUS_Y.1505 covering  100%%
+Node MINUS_Y.1506::2C9 is overlapped by MINUS_Y.1506 covering  100%%
+Node MINUS_Y.1506::37F is overlapped by MINUS_Y.1506 covering  100%%
+Node MINUS_Y.1507::2C4 is overlapped by MINUS_Y.1507 covering  100%%
+Node MINUS_Y.1507::37A is overlapped by MINUS_Y.1507 covering  100%%
+Node MINUS_Y.1508::2C5 is overlapped by MINUS_Y.1508 covering  100%%
+Node MINUS_Y.1508::37B is overlapped by MINUS_Y.1508 covering  100%%
+Node MINUS_Y.1509::37C is overlapped by MINUS_Y.1509 covering  100%%
+Node MINUS_Y.1509::2C6 is overlapped by MINUS_Y.1509 covering   68%%
+Node MINUS_Y.1509::2C6 is overlapped by KIKI1.101 covering   16%%
+Node MINUS_Y.1509::2C6 is overlapped by KIKI2.102 covering   16%%

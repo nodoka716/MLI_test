@@ -1,0 +1,7 @@
+Nodes	area	rays	emiss	bij sum	bij self	bij inact	error
+MINUS_X.1401	252000.	5000	0.8	1			0.0
+MINUS_Z.1601	252000.	5000	0.8	1			0.0
+MLI.1	360000.	5000	0.6	1			0.0
+PLUS_X.1101	252000.	5000	0.8	1			0.0
+PLUS_Y.1201	360000.	5000	0.8	1			0.0
+PLUS_Z.1301	252000.	5000	0.8	1			0.0

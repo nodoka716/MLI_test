@@ -1,0 +1,103 @@
+[ AutoCAD - Wed Jul 06 02:14:01 2022  ]----------------------------------------
+No duplicate nodes or insulation nodalization warnings found
+
+Calculating SINDA/FLUINT data
+Face Contactor[MAIN][0]::31E
+From areas = 360000., To areas = 105200.
+This may be indicative of incorrect from-to surfaces
+Note that the 'to' area is only single sided in the calculation
+
+ContactorData\Warnings_MAIN_31E.txt contains warnings
+Face Contactor[MAIN][0]::31F
+From areas = 360000., To areas = 105000.
+This may be indicative of incorrect from-to surfaces
+Note that the 'to' area is only single sided in the calculation
+
+ContactorData\Warnings_MAIN_31F.txt contains warnings
+Calculating Thermal Analyzer Input took 0.50 sec
+
+Outputting SINDA/FLUINT data
+Outputting data for submodel GLOBAL...
+Outputting data for submodel HEATER1501...
+Outputting data for submodel HEATER1509...
+Outputting data for submodel HEATLOAD1...
+Outputting data for submodel KIKI1...
+Outputting data for submodel KIKI2...
+Outputting data for submodel KIKI3...
+Outputting data for submodel MAIN...
+Outputting data for submodel MINUS_X...
+Outputting data for submodel MINUS_Y...
+Outputting data for submodel MINUS_Z...
+Outputting data for submodel PLUS_X...
+Outputting data for submodel PLUS_Y...
+Outputting data for submodel PLUS_Z...
+Outputting data for submodel SPACE...
+    Number of nodes:      27
+    Number of conductors: 71
+    
+Total Nodal Mass = 28.815203 kg
+
+
+*** RADCAD RAYTRACE HEATING RATES RUN START for database External-orbit-RcOptics.rch
+Creating new database named External-orbit-RcOptics.rch
+Using regular optical properties
+Fixed RadCAD
+Fixed license found.
+Start and End position calc already done
+Total Elapsed time for heating rate calculations = 6.75 sec
+Outputting SINDA/FLUINT heating rate data to files:
+    C1A0.hra for arrays and C1A0.hrl for logic...
+Total Elapsed time for heating rate calculations and output = 8.28 sec
+
+
+*** RADCAD RAYTRACE RADK RUN START for database External-RcOptics.rck
+Creating new database named External-RcOptics.rck
+Using regular optical properties
+Fixed RadCAD
+Fixed license found.
+Time to calculate radk = 0.45 sec
+Outputting SINDA/FLUINT radks to file C1A1.k...
+Total elapsed time for calculations and output = 0.81 sec
+    14 calculation nodes
+    14 radks were output, 0 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+     
+    No overlapping surfaces greater than 10.0% found in External
+
+
+*** RADCAD RAYTRACE RADK RUN START for database Internal-RcOptics.rck
+Creating new database named Internal-RcOptics.rck
+Using regular optical properties
+Fixed RadCAD
+Fixed license found.
+Time to calculate radk = 0.48 sec
+Outputting SINDA/FLUINT radks to file C1A2.k...
+Total elapsed time for calculations and output = 0.79 sec
+Group OVERLAP_Internal created.
+    17 calculation nodes
+    133 radks were output, 3 radks were filtered out
+    0 nodes(0%) have bij sum + bij inactive < .9
+    5000 average number of rays per node shot
+    2 nodes(11%) have Bij Inactive > .2
+        This may be ok, but may be an indication of an incorrect active side
+     
+    Note that overlapping surfaces cause INCORRECT and INCONSISTENT results.
+    Node MINUS_Y.1501::2CA is overlapped by KIKI3.103 covering   36%
+    Node MINUS_Y.1509::2C6 is overlapped by KIKI1.101 covering   16%
+    Node MINUS_Y.1509::2C6 is overlapped by KIKI2.102 covering   16%
+    Note that overlapping surfaces cause INCORRECT and INCONSISTENT results.
+
+*** Running SINDA model named C:\Users\81903\Documents\Thermal Desktop\op3\MLItest_MSSmodel\Insulation\case1.inp
+Successful completion of processor
+From C:\Users\81903\Documents\Thermal Desktop\op3\MLItest_MSSmodel\Insulation\messages_case1.log
+     LOOPCT =              53Heater[HEATER1501]::343:
+     LOOPCT =              53    Steady State Proportional Heater Power Required:
+     LOOPCT =              53            1.46358674660244      W
+     LOOPCT =              53Heater[HEATER1509]::344:
+     LOOPCT =              53    Steady State Proportional Heater Power Required:
+     LOOPCT =              53           0.533082917634484      W
+     TIMEN  =    50000.00      The ASTAP execution time is:    3.65081060002558       seconds
+Time to run SINDA = 19.28 sec
+
+Case Set Solved::Elapsed time = 30.67 sec

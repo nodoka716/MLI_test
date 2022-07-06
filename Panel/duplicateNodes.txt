@@ -1,0 +1,10 @@
+Node Names, Duplicates, Max Extents[mm]
+MINUS_Y.1501  1  0.
+MINUS_Y.1502  1  0.
+MINUS_Y.1503  1  0.
+MINUS_Y.1504  1  0.
+MINUS_Y.1505  1  0.
+MINUS_Y.1506  1  0.
+MINUS_Y.1507  1  0.
+MINUS_Y.1508  1  0.
+MINUS_Y.1509  1  0.

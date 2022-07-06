@@ -1,0 +1,7 @@
+ LOOPCT =              53Heater[HEATER1501]::343:
+ LOOPCT =              53    Steady State Proportional Heater Power Required:
+ LOOPCT =              53            1.46358674660244      W
+ LOOPCT =              53Heater[HEATER1509]::344:
+ LOOPCT =              53    Steady State Proportional Heater Power Required:
+ LOOPCT =              53           0.533082917634484      W
+ TIMEN  =    50000.00      The ASTAP execution time is:    3.65081060002558       seconds

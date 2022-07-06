@@ -1,0 +1,25 @@
+C    DWG name:      MLI_panel.dwg
+C    Thermophysical Property Database: TdThermo.tdp
+C    Optical Property Database:        RcOptics.rco
+C    Computer name: LAPTOP-IT6G9966
+C    User name:     81903
+C    Symbol Names, Evaluated values, Input Strings, Comments
+C    hrBetaAngle          -30.          -30
+C    hrEccen              0.            0
+C    hrIllum              0.            0
+C    hrMeanAnom           0.            0
+C    hrPeriod             6052.41       6052.41              Always in current user units. If programming, use hrPeri...
+C    hrPeriodSec          6052.41       6052.41
+C    hrPos                0.            0
+C    hrShadowEntry        121.9905      1.219905120850e+02  
+C    hrShadowExit         238.0095      2.380094879151e+02  
+C    hrSubSolarMeanAnom   6.348220e-12  6.34822e-12          -180 to 180
+C    hrSubSolarTrueAnom   6.348220e-12  6.34822e-12          -180 to 180
+C    hrTime               0.            0                    Always in current user units. If programming, use hrTime...
+C    hrTimeSec            0.            0
+C    hrTimeShadowEntry    2050.936      2.050936097861e+03  
+C    hrTimeShadowEntrySec 2050.936      2.050936097861e+03  
+C    hrTimeShadowExit     4001.48       4001.48
+C    hrTimeShadowExitSec  4001.48       4001.48
+C    hrTrueAnom           0.            0
+C

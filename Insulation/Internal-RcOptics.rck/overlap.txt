@@ -1,0 +1,4 @@
+Note that overlapping surfaces cause INCORRECT and INCONSISTENT results.
+Node MINUS_Y.1501::2CA is overlapped by KIKI3.103 covering   36%%
+Node MINUS_Y.1509::2C6 is overlapped by KIKI1.101 covering   16%%
+Node MINUS_Y.1509::2C6 is overlapped by KIKI2.102 covering   16%%

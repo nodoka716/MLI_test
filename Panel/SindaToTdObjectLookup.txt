@@ -1,0 +1,239 @@
+Node: KIKI1.101
+      FD Brick[MAIN]::2ED
+      KIKI1.101::2EE
+Node: KIKI2.102
+      FD Brick[MAIN]::2EF
+      KIKI2.102::2F0
+Node: KIKI3.103
+      FD Brick[MAIN]::2E9
+      KIKI3.103::2EA
+Node: MINUS_X.1401
+      MINUS_X.1401::2DC
+      Rect[MAIN]::2DB
+Node: MINUS_Y.1501
+      MINUS_Y.1501::2CA
+      MINUS_Y.1501::380
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Y.1502
+      MINUS_Y.1502::2CB
+      MINUS_Y.1502::381
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Y.1503
+      MINUS_Y.1503::2CC
+      MINUS_Y.1503::382
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Y.1504
+      MINUS_Y.1504::2C7
+      MINUS_Y.1504::37D
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Y.1505
+      MINUS_Y.1505::2C8
+      MINUS_Y.1505::37E
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Y.1506
+      MINUS_Y.1506::2C9
+      MINUS_Y.1506::37F
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Y.1507
+      MINUS_Y.1507::2C4
+      MINUS_Y.1507::37A
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Y.1508
+      MINUS_Y.1508::2C5
+      MINUS_Y.1508::37B
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Y.1509
+      MINUS_Y.1509::2C6
+      MINUS_Y.1509::37C
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Node: MINUS_Z.1601
+      MINUS_Z.1601::2BC
+      Rect[MAIN]::2BB
+Node: MLI.1
+      MLI.1::3A4
+      Rect[MAIN]::397
+Node: PLUS_X.1101
+      PLUS_X.1101::2DE
+      Rect[MAIN]::2DD
+Node: PLUS_Y.1201
+      PLUS_Y.1201::2E7
+      Rect[MAIN]::2E6
+Node: PLUS_Z.1301
+      PLUS_Z.1301::2E5
+      Rect[MAIN]::2E4
+Node: SPACE.1
+      MINUS_Z.1601::2BC
+Conductor: MAIN.1
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.2
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.3
+      Face Contactor[MAIN][0]::31D
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.4
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.5
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.6
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.7
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.8
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.9
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.10
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.11
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.12
+      Face Contactor[MAIN][0]::31C
+      Face Contactor[MAIN][0]::31E
+Conductor: MAIN.13
+      Face Contactor[MAIN][0]::31B
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.14
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.15
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.16
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.17
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.18
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.19
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.20
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.21
+      Face Contactor[MAIN][0]::31F
+Conductor: MAIN.22
+      Edge Contactor[MAIN][0]::315
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.23
+      Edge Contactor[MAIN][0]::315
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.24
+      Edge Contactor[MAIN][0]::315
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.25
+      Edge Contactor[MAIN][0]::315
+      Edge Contactor[MAIN][0]::316
+Conductor: MAIN.26
+      Edge Contactor[MAIN][0]::315
+      Edge Contactor[MAIN][0]::317
+Conductor: MAIN.27
+      Edge Contactor[MAIN][0]::315
+      Edge Contactor[MAIN][0]::318
+Conductor: MAIN.28
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.29
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.30
+      Edge Contactor[MAIN][0]::316
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.31
+      Edge Contactor[MAIN][0]::319
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.32
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.33
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.34
+      Edge Contactor[MAIN][0]::319
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.35
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.36
+      Edge Contactor[MAIN][0]::319
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.37
+      Edge Contactor[MAIN][0]::318
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.38
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.39
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.40
+      Edge Contactor[MAIN][0]::316
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.41
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.42
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.43
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.44
+      Edge Contactor[MAIN][0]::318
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.45
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.46
+      Edge Contactor[MAIN][0]::316
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.47
+      Rect[MAIN]::2C2
+      Rect[MAIN]::379
+Conductor: MAIN.48
+      Edge Contactor[MAIN][0]::318
+      Edge Contactor[MAIN][0]::31A
+Conductor: MAIN.49
+      Edge Contactor[MAIN][0]::316
+      Edge Contactor[MAIN][0]::319
+Conductor: MAIN.50
+      Edge Contactor[MAIN][0]::316
+      Edge Contactor[MAIN][0]::317
+Conductor: MAIN.51
+      Edge Contactor[MAIN][0]::317
+      Edge Contactor[MAIN][0]::319
+Conductor: MAIN.52
+      Edge Contactor[MAIN][0]::318
+      Edge Contactor[MAIN][0]::319
+Conductor: MAIN.53
+      Edge Contactor[MAIN][0]::317
+      Edge Contactor[MAIN][0]::318
+Conductor: MLI_Y.1
+      Face Contactor[MLI_Y][0]::3B1
+Conductor: MLI_Y.2
+      Face Contactor[MLI_Y][0]::3B1
+Conductor: MLI_Y.3
+      Face Contactor[MLI_Y][0]::3B1
+Conductor: MLI_Y.4
+      Face Contactor[MLI_Y][0]::3B1
+Conductor: MLI_Y.5
+      Face Contactor[MLI_Y][0]::3B1
+Conductor: MLI_Y.6
+      Face Contactor[MLI_Y][0]::3B1
+Conductor: MLI_Y.7
+      Face Contactor[MLI_Y][0]::3B1
+Conductor: MLI_Y.8
+      Face Contactor[MLI_Y][0]::3B1
+Conductor: MLI_Y.9
+      Face Contactor[MLI_Y][0]::3B1
+Heat Load: KIKI1.101
+      Heat Load[HEATLOAD1]::347
+Heater: MINUS_Y.1501
+      Heater[HEATER1501]::343
+Heater: MINUS_Y.1509
+      Heater[HEATER1509]::344

@@ -1,0 +1,13 @@
+Submodel, Substrate, Insulation Mass, kg
+  KIKI1  5.18100 0.
+  KIKI2  5.18100 0.
+  KIKI3 17.66250 0.
+MINUS_X  0.08140 0.
+MINUS_Y  0.23256 0.
+MINUS_Z  0.08140 0.
+ PLUS_X  0.08140 0.
+ PLUS_Y  0.11628 0.
+ PLUS_Z  0.08140 0.
+ Total: 28.69892 0.
+
+Total Mass = 28.698923 kg

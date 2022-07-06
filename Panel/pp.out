@@ -1,0 +1,665 @@
+
+
+                       S I N D A / F L U I N T 
+
+
+
+    ____          _______
+  //    \|   __    \|   \\ 
+ ||      |  /  \   ||    ||    C&R Technologies, Inc.
+ ||         \__/   ||    ||    Boulder Colorado, USA
+ ||         /  \   ||___//     Phone 303.971.0292, FAX 303.971.0035
+ ||         |  |/  ||   \\     www.crtech.com, support@crtech.com
+ ||      |  \__/\  ||    \\    
+  \\____/|         ||     \\   Hot engineering ... Cool software (R)
+
+
+
+             P R E P R O C E S S O R  E X E C U T I O N
+
+             VERSION ................... CR6.2N    
+             MODIFICATION DATE ......... 18AUG2021 
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     1
+
+ MODEL = SINDA          
+ OPTIONS DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OPTIONS                                                                       ROOT                            
+   INPUT               OUTPUT = case1.out                                                               ROOT                            
+   INPUT               SAVE = case1.sav                                                                 ROOT                            
+   INPUT               MLINE = 100000 $ Limits headers output                                           ROOT                            
+   INPUT           TITLE MLI_panel.dwg - Case Set 1                                                     ROOT                            
+   INPUT           C    SINDA Data generated with Thermal Desktop 6.2 Patch 13                          ROOT                            
+   INPUT           C    Generated on Wed Jul  6 02:02:16 2022                                           ROOT                            
+   INPUT           C    From file: MLI_panel.dwg                                                        ROOT                            
+   INPUT           C    Case Set: Case Set 1                                                            ROOT                            
+   INPUT           C    TDUNITS,   Energy     = J                                                       ROOT                            
+   INPUT           C    TDUNITS,   Time       = s                                                       ROOT                            
+   INPUT           C    TDUNITS,   Temp       = K                                                       ROOT                            
+   INPUT           C    TDUNITS,   Mass       = kg                                                      ROOT                            
+   INPUT           C    TDUNITS,   Length     = mm                                                      ROOT                            
+   INPUT           C    TDUNITS,   Orbit      = km                                                      ROOT                            
+   INPUT           C    TDUNITS,   Pressure   = Pa                                                      ROOT                            
+   INPUT           C    TDUNITS,   Force      = N                                                       ROOT                            
+   INPUT           C    TDUNITS,   Angle      = Degrees                                                 ROOT                            
+   INPUT           C    TDUNITS,   Volt       = volt                                                    ROOT                            
+   INPUT           C    TDUNITS,   Current    = amp                                                     ROOT                            
+   INPUT           C    DWG name:      MLI_panel.dwg                                                    ROOT                            
+   INPUT           C    Thermophysical Property Database: TdThermo.tdp                                  ROOT                            
+   INPUT           C    Optical Property Database:        RcOptics.rco                                  ROOT                            
+   INPUT           C    Computer name: LAPTOP-IT6G9966                                                  ROOT                            
+   INPUT           C    User name:     81903                                                            ROOT                            
+   INPUT           C    Symbol Names, Evaluated values, Input Strings, Comments                         ROOT                            
+   INPUT           C    hrBetaAngle          -30.          -30                                          ROOT                            
+   INPUT           C    hrEccen              0.            0                                            ROOT                            
+   INPUT           C    hrIllum              0.            0                                            ROOT                            
+   INPUT           C    hrMeanAnom           0.            0                                            ROOT                            
+   INPUT           C    hrPeriod             6052.41       6052.41              Always in current u     ROOT                            
+   INPUT           C    hrPeriodSec          6052.41       6052.41                                      ROOT                            
+   INPUT           C    hrPos                0.            0                                            ROOT                            
+   INPUT           C    hrShadowEntry        121.9905      1.219905120850e+02                           ROOT                            
+   INPUT           C    hrShadowExit         238.0095      2.380094879151e+02                           ROOT                            
+   INPUT           C    hrSubSolarMeanAnom   6.348220e-12  6.34822e-12          -180 to 180             ROOT                            
+   INPUT           C    hrSubSolarTrueAnom   6.348220e-12  6.34822e-12          -180 to 180             ROOT                            
+   INPUT           C    hrTime               0.            0                    Always in current u     ROOT                            
+   INPUT           C    hrTimeSec            0.            0                                            ROOT                            
+   INPUT           C    hrTimeShadowEntry    2050.936      2.050936097861e+03                           ROOT                            
+   INPUT           C    hrTimeShadowEntrySec 2050.936      2.050936097861e+03                           ROOT                            
+   INPUT           C    hrTimeShadowExit     4001.48       4001.48                                      ROOT                            
+   INPUT           C    hrTimeShadowExitSec  4001.48       4001.48                                      ROOT                            
+   INPUT           C    hrTrueAnom           0.            0                                            ROOT                            
+   INPUT           C                                                                                    ROOT                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     2
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ MODEL NAME CHECK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+
+  LIST OF HEADER CARDS IN NODE DATA - CHECKING MODEL NAMES AGAINST BUILD CARDS
+
+HEADER NODE DATA, HEATER1501
+HEADER NODE DATA, HEATER1509
+HEADER NODE DATA, HEATLOAD1
+HEADER NODE DATA, KIKI1
+HEADER NODE DATA, KIKI2
+HEADER NODE DATA, KIKI3
+HEADER NODE DATA, MAIN
+HEADER NODE DATA, MINUS_X
+HEADER NODE DATA, MINUS_Y
+HEADER NODE DATA, MINUS_Z
+HEADER NODE DATA, MLI
+HEADER NODE DATA, MLI_Y
+HEADER NODE DATA, PLUS_X
+HEADER NODE DATA, PLUS_Y
+HEADER NODE DATA, PLUS_Z
+HEADER NODE DATA, SPACE
+HEADER NODE DATA, C1A0
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     3
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ MODEL NAME CHECK
+
+ SUMMARY OF REGISTER VALUES ---------------------- 
+
+ CH343                            =    0.0000    , CH344                            =    0.0000    
+ HT343                            =    0.0000    , HT344                            =    0.0000    
+ HY343                            =    0.0000    , HY344                            =    0.0000    
+ OT343                            =    0.0000    , OT344                            =    0.0000    
+ PO343                            =    0.0000    , PO344                            =    0.0000    
+ SF343                            =    0.0000    , SF344                            =    0.0000    
+ SO343                            =    0.0000    , SO344                            =    0.0000    
+ ST343                            =    0.0000    , ST344                            =    0.0000    
+ TP343                            =    0.0000    , TP344                            =    0.0000    
+ XP343                            =    0.0000    , XP344                            =    0.0000    
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     4
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ CONSTANTS DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CONTROL DATA, GLOBAL                                                          GLOBAL                          
+   INPUT               ABSZRO = 0.                                                                      GLOBAL                          
+   INPUT               SIGMA  = 5.670400E-14                                                            GLOBAL                          
+   INPUT               NLOOPS  = 1000                                                                   GLOBAL                          
+   INPUT               NLOOPT  = 100                                                                    GLOBAL                          
+   INPUT               TIMEO  = 0.                                                                      GLOBAL                          
+   INPUT               TIMEND  = 50000.                                                                 GLOBAL                          
+   INPUT               DTIMES  = 0.                                                                     GLOBAL                          
+   INPUT               PATMOS  = 0.                                                                     GLOBAL                          
+   INPUT               ARLXCA  = 0.001                                                                  GLOBAL                          
+   INPUT               DRLXCA  = 0.001                                                                  GLOBAL                          
+   INPUT               EXTLIM  = 0.5                                                                    GLOBAL                          
+   INPUT               MATMET = 2 $ AUTODETERMINE SINGLE MATRIX                                         GLOBAL                          
+   INPUT               ITERXT = 3                                                                       GLOBAL                          
+   INPUT               EBALSA  = 0.01                                                                   GLOBAL                          
+   INPUT               EBALNA  = 0.                                                                     GLOBAL                          
+   INPUT               ITEROT  = 0                                                                      GLOBAL                          
+   INPUT               ITHOLD  = 0                                                                      GLOBAL                          
+   INPUT               OUTPUT  = 0.                                                                     GLOBAL                          
+   INPUT               ATMPCA  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               DTMPCA  = 50.                                                                    GLOBAL                          
+   INPUT               DTIMEI  = 0.                                                                     GLOBAL                          
+   INPUT               DTIMEL  = 0.                                                                     GLOBAL                          
+   INPUT               DTIMEH  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               CSGFAC  = 1.                                                                     GLOBAL                          
+   INPUT               OPEITR  = 0                                                                      GLOBAL                          
+   INPUT               DTSIZF  = 0.1                                                                    GLOBAL                          
+   INPUT               DTTUBF  = 0.1                                                                    GLOBAL                          
+   INPUT               DTMAXF  = 1.000000E+30                                                           GLOBAL                          
+   INPUT               DTMINF  = 0.                                                                     GLOBAL                          
+   INPUT               OUTPTF = 0.                                                                      GLOBAL                          
+   INPUT               OPITRF  = 0                                                                      GLOBAL                          
+   INPUT               RERRF  = 0.01                                                                    GLOBAL                          
+   INPUT               REBALF  = 0.01                                                                   GLOBAL                          
+   INPUT               ITHLDF  = 0                                                                      GLOBAL                          
+   INPUT               ITROTF  = 0                                                                      GLOBAL                          
+   INPUT               RSSIZF  = 0.5                                                                    GLOBAL                          
+   INPUT               RSTUBF  = 0.5                                                                    GLOBAL                          
+   INPUT               RSMAXF  = 3600.                                                                  GLOBAL                          
+   INPUT               FBEBALA  = 0.1                                                                   GLOBAL                          
+   INPUT               SPARSEG  = 0.001                                                                 GLOBAL                          
+   INPUT               FRAVER  = 0.                                                                     GLOBAL                          
+   INPUT               RMSPLT  = 0.1                                                                    GLOBAL                          
+   INPUT               RMFRAC  = 0.5                                                                    GLOBAL                          
+   INPUT               RMRATE  = 0.1                                                                    GLOBAL                          
+   INPUT               UID =    SI                                                                      GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     5
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ ARRAY DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER ARRAY DATA, C1A0                                                              C1A0                            
+   INPUT           PSTOP                                                                                C1A0                            
+   INPUT           PSTART                                                                               C1A0                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     6
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ CHARACTER ARRAY DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CARRAY DATA, C1A0                                                             C1A0                            
+   INPUT            1 = MINUS_X, 1401, MINUS_Z, 1601, MLI, 1, PLUS_X, 1101, PLUS_Y, 1201, PLUS_Z        C1A0                            
+   INPUT            2 =  1301                                                                           C1A0                            
+   INPUT           C INSERT C1A0.hrl                                                                    C1A0                            
+   INPUT           HEADER SOLVER                                                                        GLOBAL                          
+   INPUT               ADERO  = 0.0001                                                                  GLOBAL                          
+   INPUT               RDERO  = 0.02                                                                    GLOBAL                          
+   INPUT               AERRO  = 0.0001                                                                  GLOBAL                          
+   INPUT               RERRO  = 0.01                                                                    GLOBAL                          
+   INPUT               PUSHO  = 1.                                                                      GLOBAL                          
+   INPUT               RCACTO  = 0.1                                                                    GLOBAL                          
+   INPUT               RCERRO  = 0.003                                                                  GLOBAL                          
+   INPUT               ACHGO  = 0.1                                                                     GLOBAL                          
+   INPUT               RCHGO  = 0.9                                                                     GLOBAL                          
+   INPUT               RCVIO  = 0.2                                                                     GLOBAL                          
+   INPUT               METHO  = 2                                                                       GLOBAL                          
+   INPUT               NLOOPO  = 100                                                                    GLOBAL                          
+   INPUT               MDERO  = 0                                                                       GLOBAL                          
+   INPUT               NCONVO  = 2                                                                      GLOBAL                          
+   INPUT               NERVUS  = 0                                                                      GLOBAL                          
+   INPUT               NEWPRO  = 0                                                                      GLOBAL                          
+   INPUT               NLOOPR  = 100                                                                    GLOBAL                          
+   INPUT               ADERR  = 0.01                                                                    GLOBAL                          
+   INPUT               RERRR  = 0.001                                                                   GLOBAL                          
+   INPUT               AERRR  = 1.000000E-05                                                            GLOBAL                          
+   INPUT               RDERR  = 0.02                                                                    GLOBAL                          
+   INPUT           C INSERT case1.cc                                                                    GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     7
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ NODE DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER NODE DATA, HEATER1501                                                         HEATER1501                      
+   INPUT           HEADER NODE DATA, HEATER1509                                                         HEATER1509                      
+   INPUT           HEADER NODE DATA, HEATLOAD1                                                          HEATLOAD1                       
+   INPUT           HEADER NODE DATA, KIKI1                                                              KIKI1                           
+   INPUT                       101,    293.15,    813.417                                               KIKI1                           
+   INPUT           HEADER NODE DATA, KIKI2                                                              KIKI2                           
+   INPUT                       102,    293.15,    813.417                                               KIKI2                           
+   INPUT           HEADER NODE DATA, KIKI3                                                              KIKI3                           
+   INPUT                       103,    293.15,    4524.956                                              KIKI3                           
+   INPUT           HEADER NODE DATA, MAIN                                                               MAIN                            
+   INPUT           HEADER NODE DATA, MINUS_X                                                            MINUS_X                         
+   INPUT                       1401,    293.15,    68.94241                                             MINUS_X                         
+   INPUT           HEADER NODE DATA, MINUS_Y                                                            MINUS_Y                         
+   INPUT                       1501,    293.15,    63.03306                                             MINUS_Y                         
+   INPUT                       1502,    293.15,    31.51653                                             MINUS_Y                         
+   INPUT                       1503,    293.15,    63.03306                                             MINUS_Y                         
+   INPUT                       1504,    293.15,    31.51653                                             MINUS_Y                         
+   INPUT                       1505,    293.15,    15.75827                                             MINUS_Y                         
+   INPUT                       1506,    293.15,    31.51653                                             MINUS_Y                         
+   INPUT                       1507,    293.15,    63.03306                                             MINUS_Y                         
+   INPUT                       1508,    293.15,    31.51653                                             MINUS_Y                         
+   INPUT                       1509,    293.15,    63.03306                                             MINUS_Y                         
+   INPUT           HEADER NODE DATA, MINUS_Z                                                            MINUS_Z                         
+   INPUT                       1601,    293.15,    68.94241                                             MINUS_Z                         
+   INPUT           HEADER NODE DATA, MLI                                                                MLI                             
+   INPUT                       1,    293.15,    98.48916                                                MLI                             
+   INPUT           HEADER NODE DATA, MLI_Y                                                              MLI_Y                           
+   INPUT           HEADER NODE DATA, PLUS_X                                                             PLUS_X                          
+   INPUT                       1101,    293.15,    68.94241                                             PLUS_X                          
+   INPUT           HEADER NODE DATA, PLUS_Y                                                             PLUS_Y                          
+   INPUT                       1201,    293.15,    98.48916                                             PLUS_Y                          
+   INPUT           HEADER NODE DATA, PLUS_Z                                                             PLUS_Z                          
+   INPUT                       1301,    293.15,    68.94241                                             PLUS_Z                          
+   INPUT           HEADER NODE DATA, SPACE                                                              SPACE                           
+   INPUT                       -1,    2.73,    -1.0                                                     SPACE                           
+   INPUT           HEADER NODE DATA, C1A0                                                               C1A0                            
+   INPUT           HEADER NODE DATA,C1A1                                                                C1A1                            
+   INPUT           HEADER NODE DATA,C1A2                                                                C1A2                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     8
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ CONDUCTOR DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER CONDUCTOR DATA, MAIN                                                          MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31E                                             MAIN                            
+   INPUT                       1,    KIKI1.101,    MINUS_Y.1503,    14.4                                MAIN                            
+   INPUT                       2,    KIKI1.101,    MINUS_Y.1506,    7.2                                 MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31D                                             MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31E                                             MAIN                            
+   INPUT                       3,    KIKI1.101,    MINUS_Y.1509,    20.4                                MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31E                                             MAIN                            
+   INPUT                       4,    KIKI2.102,    MINUS_Y.1501,    28.8                                MAIN                            
+   INPUT                       5,    KIKI2.102,    MINUS_Y.1502,    14.4                                MAIN                            
+   INPUT                       6,    KIKI2.102,    MINUS_Y.1503,    14.4                                MAIN                            
+   INPUT                       7,    KIKI2.102,    MINUS_Y.1504,    14.4                                MAIN                            
+   INPUT                       8,    KIKI2.102,    MINUS_Y.1505,    7.2                                 MAIN                            
+   INPUT                       9,    KIKI2.102,    MINUS_Y.1506,    7.2                                 MAIN                            
+   INPUT                       10,    KIKI2.102,    MINUS_Y.1507,    28.8                               MAIN                            
+   INPUT                       11,    KIKI2.102,    MINUS_Y.1508,    14.4                               MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31C                                             MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31E                                             MAIN                            
+   INPUT                       12,    KIKI2.102,    MINUS_Y.1509,    20.4                               MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31B                                             MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31F                                             MAIN                            
+   INPUT                       13,    KIKI3.103,    MINUS_Y.1501,    51.3                               MAIN                            
+   INPUT           C Contact - Face Contactor[MAIN][0]::31F                                             MAIN                            
+   INPUT                       14,    KIKI3.103,    MINUS_Y.1502,    14.4                               MAIN                            
+   INPUT                       15,    KIKI3.103,    MINUS_Y.1503,    28.8                               MAIN                            
+   INPUT                       16,    KIKI3.103,    MINUS_Y.1504,    14.4                               MAIN                            
+   INPUT                       17,    KIKI3.103,    MINUS_Y.1505,    7.2                                MAIN                            
+   INPUT                       18,    KIKI3.103,    MINUS_Y.1506,    14.4                               MAIN                            
+   INPUT                       19,    KIKI3.103,    MINUS_Y.1507,    28.8                               MAIN                            
+   INPUT                       20,    KIKI3.103,    MINUS_Y.1508,    14.4                               MAIN                            
+   INPUT                       21,    KIKI3.103,    MINUS_Y.1509,    28.8                               MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::315                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       22,    MINUS_X.1401,    MINUS_Y.1507,    0.096                           MAIN                            
+   INPUT                       23,    MINUS_X.1401,    MINUS_Y.1508,    0.048                           MAIN                            
+   INPUT                       24,    MINUS_X.1401,    MINUS_Y.1509,    0.096                           MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::315                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::316                                             MAIN                            
+   INPUT                       25,    MINUS_X.1401,    MINUS_Z.1601,    0.168                           MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::315                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::317                                             MAIN                            
+   INPUT                       26,    MINUS_X.1401,    PLUS_Y.1201,    0.24                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::315                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::318                                             MAIN                            
+   INPUT                       27,    MINUS_X.1401,    PLUS_Z.1301,    0.168                            MAIN                            
+   INPUT                       28,    MINUS_Y.1501,    MINUS_Y.1502,    0.1386667                       MAIN                            
+   INPUT                       29,    MINUS_Y.1501,    MINUS_Y.1504,    0.1386667                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::316                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       30,    MINUS_Y.1501,    MINUS_Z.1601,    0.096                           MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::319                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       31,    MINUS_Y.1501,    PLUS_X.1101,    0.096                            MAIN                            
+   INPUT                       32,    MINUS_Y.1502,    MINUS_Y.1503,    0.1386667                       MAIN                            
+   INPUT                       33,    MINUS_Y.1502,    MINUS_Y.1505,    0.06933334                      MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::319                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       34,    MINUS_Y.1502,    PLUS_X.1101,    0.048                            MAIN                            
+   INPUT                       35,    MINUS_Y.1503,    MINUS_Y.1506,    0.1386667                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::319                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       36,    MINUS_Y.1503,    PLUS_X.1101,    0.096                            MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::318                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       37,    MINUS_Y.1503,    PLUS_Z.1301,    0.096                            MAIN                            
+   INPUT                       38,    MINUS_Y.1504,    MINUS_Y.1505,    0.06933334                      MAIN                            
+   INPUT                       39,    MINUS_Y.1504,    MINUS_Y.1507,    0.1386667                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::316                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       40,    MINUS_Y.1504,    MINUS_Z.1601,    0.048                           MAIN                            
+   INPUT                       41,    MINUS_Y.1505,    MINUS_Y.1506,    0.06933334                      MAIN                            
+   INPUT                       42,    MINUS_Y.1505,    MINUS_Y.1508,    0.06933334                      MAIN                            
+   INPUT                       43,    MINUS_Y.1506,    MINUS_Y.1509,    0.1386667                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::318                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       44,    MINUS_Y.1506,    PLUS_Z.1301,    0.048                            MAIN                            
+   INPUT                       45,    MINUS_Y.1507,    MINUS_Y.1508,    0.1386667                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::316                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       46,    MINUS_Y.1507,    MINUS_Z.1601,    0.096                           MAIN                            
+   INPUT                       47,    MINUS_Y.1508,    MINUS_Y.1509,    0.1386667                       MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::318                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::31A                                             MAIN                            
+   INPUT                       48,    MINUS_Y.1509,    PLUS_Z.1301,    0.096                            MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::316                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::319                                             MAIN                            
+   INPUT                       49,    MINUS_Z.1601,    PLUS_X.1101,    0.168                            MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::316                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::317                                             MAIN                            
+   INPUT                       50,    MINUS_Z.1601,    PLUS_Y.1201,    0.24                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::317                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::319                                             MAIN                            
+   INPUT                       51,    PLUS_X.1101,    PLUS_Y.1201,    0.24                              MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::318                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::319                                             MAIN                            
+   INPUT                       52,    PLUS_X.1101,    PLUS_Z.1301,    0.168                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::317                                             MAIN                            
+   INPUT           C Contact - Edge Contactor[MAIN][0]::318                                             MAIN                            
+   INPUT                       53,    PLUS_Y.1201,    PLUS_Z.1301,    0.24                              MAIN                            
+   INPUT           HEADER CONDUCTOR DATA, MLI_Y                                                         MLI_Y                           
+   INPUT           C Contact - Face Contactor[MLI_Y][0]::3B1                                            MLI_Y                           
+   INPUT                       1,    MINUS_Y.1501,    MLI.1,    11.52                                   MLI_Y                           
+   INPUT                       2,    MINUS_Y.1502,    MLI.1,    5.76                                    MLI_Y                           
+   INPUT                       3,    MINUS_Y.1503,    MLI.1,    11.52                                   MLI_Y                           
+   INPUT                       4,    MINUS_Y.1504,    MLI.1,    5.76                                    MLI_Y                           
+   INPUT                       5,    MINUS_Y.1505,    MLI.1,    2.88                                    MLI_Y                           
+   INPUT                       6,    MINUS_Y.1506,    MLI.1,    5.76                                    MLI_Y                           
+   INPUT                       7,    MINUS_Y.1507,    MLI.1,    11.52                                   MLI_Y                           
+   INPUT                       8,    MINUS_Y.1508,    MLI.1,    5.76                                    MLI_Y                           
+   INPUT                       9,    MINUS_Y.1509,    MLI.1,    11.52                                   MLI_Y                           
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE     9
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ VARIABLES DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER VARIABLES1, HEATER1501                                                        HEATER1501                      
+   INPUT                 HY343 = 3.                                                                     HEATER1501                      
+   INPUT                 PO343 = 3.                                                                     HEATER1501                      
+   INPUT                 IF( NSOL  .LE.  1 ) THEN                                                       HEATER1501                      
+   INPUT                     T__TD =   1. * MINUS_Y.T1501                                               HEATER1501                      
+   INPUT                     ST343 = T__TD                                                              HEATER1501                      
+   INPUT                     O__TD = 273.15 $ ON TEMP                                                   HEATER1501                      
+   INPUT                     F__TD = 283.15 $ OFF TEMP                                                  HEATER1501                      
+   INPUT                     D__TD = F__TD - O__TD                                                      HEATER1501                      
+   INPUT                     IF( T__TD  .LT.  F__TD  .AND.  D__TD  .NE.  0. ) THEN                      HEATER1501                      
+   INPUT                         X__TD = (F__TD - T__TD)/(D__TD)                                        HEATER1501                      
+   INPUT                         IF( X__TD  .GT.  1. ) X__TD = 1.                                       HEATER1501                      
+   INPUT                     ELSE                                                                       HEATER1501                      
+   INPUT                         X__TD = 0.                                                             HEATER1501                      
+   INPUT                     ENDIF                                                                      HEATER1501                      
+   INPUT                     X__TD = XP343 + ( X__TD - XP343 ) * 0.05                                   HEATER1501                      
+   INPUT                     IF( X__TD  .LT.  .001 ) X__TD = 0.                                         HEATER1501                      
+   INPUT                     IF( X__TD  .GT.  .999 ) X__TD = 1.                                         HEATER1501                      
+   INPUT                     PO343 = PO343 * X__TD                                                      HEATER1501                      
+   INPUT                     XP343 = X__TD                                                              HEATER1501                      
+   INPUT                         MINUS_Y.Q1501 = MINUS_Y.Q1501 + PO343 * 1.                             HEATER1501                      
+   INPUT                 ELSE                                                                           HEATER1501                      
+   INPUT                     T__TD =   1. * MINUS_Y.T1501                                               HEATER1501                      
+   INPUT                     ST343 = T__TD                                                              HEATER1501                      
+   INPUT                     O__TD = 273.15 $ ON TEMP                                                   HEATER1501                      
+   INPUT                     F__TD = 283.15 $ OFF TEMP                                                  HEATER1501                      
+   INPUT                     IF( T__TD  .LT.  O__TD  .OR.                                               HEATER1501                      
+   INPUT                +       (HT343  .EQ.  1  .AND.  T__TD  .LT.  F__TD ) ) THEN                     HEATER1501                      
+   INPUT                         IF( HT343  .EQ.  0 ) CH343 = 1 + CH343                                 HEATER1501                      
+   INPUT                         HT343 = 1                                                              HEATER1501                      
+   INPUT                         MINUS_Y.Q1501 = MINUS_Y.Q1501 + PO343 * 1.                             HEATER1501                      
+   INPUT                     ELSE                                                                       HEATER1501                      
+   INPUT                         HT343 = 0                                                              HEATER1501                      
+   INPUT                         PO343 = 0.                                                             HEATER1501                      
+   INPUT                     ENDIF                                                                      HEATER1501                      
+   INPUT                 ENDIF                                                                          HEATER1501                      
+   INPUT                 SO343 = O__TD                                                                  HEATER1501                      
+   INPUT                 SF343 = F__TD                                                                  HEATER1501                      
+   INPUT           HEADER VARIABLES1, HEATER1509                                                        HEATER1509                      
+   INPUT                 HY344 = 10.                                                                    HEATER1509                      
+   INPUT                 PO344 = 10.                                                                    HEATER1509                      
+   INPUT                 IF( NSOL  .LE.  1 ) THEN                                                       HEATER1509                      
+   INPUT                     T__TD =   1. * MINUS_Y.T1509                                               HEATER1509                      
+   INPUT                     ST344 = T__TD                                                              HEATER1509                      
+   INPUT                     O__TD = 273.15 $ ON TEMP                                                   HEATER1509                      
+   INPUT                     F__TD = 278.15 $ OFF TEMP                                                  HEATER1509                      
+   INPUT                     D__TD = F__TD - O__TD                                                      HEATER1509                      
+   INPUT                     IF( T__TD  .LT.  F__TD  .AND.  D__TD  .NE.  0. ) THEN                      HEATER1509                      
+   INPUT                         X__TD = (F__TD - T__TD)/(D__TD)                                        HEATER1509                      
+   INPUT                         IF( X__TD  .GT.  1. ) X__TD = 1.                                       HEATER1509                      
+   INPUT                     ELSE                                                                       HEATER1509                      
+   INPUT                         X__TD = 0.                                                             HEATER1509                      
+   INPUT                     ENDIF                                                                      HEATER1509                      
+   INPUT                     X__TD = XP344 + ( X__TD - XP344 ) * 0.05                                   HEATER1509                      
+   INPUT                     IF( X__TD  .LT.  .001 ) X__TD = 0.                                         HEATER1509                      
+   INPUT                     IF( X__TD  .GT.  .999 ) X__TD = 1.                                         HEATER1509                      
+   INPUT                     PO344 = PO344 * X__TD                                                      HEATER1509                      
+   INPUT                     XP344 = X__TD                                                              HEATER1509                      
+   INPUT                         MINUS_Y.Q1509 = MINUS_Y.Q1509 + PO344 * 1.                             HEATER1509                      
+   INPUT                 ELSE                                                                           HEATER1509                      
+   INPUT                     T__TD =   1. * MINUS_Y.T1509                                               HEATER1509                      
+   INPUT                     ST344 = T__TD                                                              HEATER1509                      
+   INPUT                     O__TD = 273.15 $ ON TEMP                                                   HEATER1509                      
+   INPUT                     F__TD = 278.15 $ OFF TEMP                                                  HEATER1509                      
+   INPUT                     IF( T__TD  .LT.  O__TD  .OR.                                               HEATER1509                      
+   INPUT                +       (HT344  .EQ.  1  .AND.  T__TD  .LT.  F__TD ) ) THEN                     HEATER1509                      
+   INPUT                         IF( HT344  .EQ.  0 ) CH344 = 1 + CH344                                 HEATER1509                      
+   INPUT                         HT344 = 1                                                              HEATER1509                      
+   INPUT                         MINUS_Y.Q1509 = MINUS_Y.Q1509 + PO344 * 1.                             HEATER1509                      
+   INPUT                     ELSE                                                                       HEATER1509                      
+   INPUT                         HT344 = 0                                                              HEATER1509                      
+   INPUT                         PO344 = 0.                                                             HEATER1509                      
+   INPUT                     ENDIF                                                                      HEATER1509                      
+   INPUT                 ENDIF                                                                          HEATER1509                      
+   INPUT                 SO344 = O__TD                                                                  HEATER1509                      
+   INPUT                 SF344 = F__TD                                                                  HEATER1509                      
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    10
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ VARIABLES DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER VARIABLES2, HEATER1501                                                        HEATER1501                      
+   INPUT                 IF( HT343  .EQ.  1 ) THEN                                                      HEATER1501                      
+   INPUT                     OT343 = OT343 + DTIMEU                                                     HEATER1501                      
+   INPUT                     TP343 = TP343 + DTIMEU * PO343                                             HEATER1501                      
+   INPUT                 ENDIF                                                                          HEATER1501                      
+   INPUT           HEADER VARIABLES2, HEATER1509                                                        HEATER1509                      
+   INPUT                 IF( HT344  .EQ.  1 ) THEN                                                      HEATER1509                      
+   INPUT                     OT344 = OT344 + DTIMEU                                                     HEATER1509                      
+   INPUT                     TP344 = TP344 + DTIMEU * PO344                                             HEATER1509                      
+   INPUT                 ENDIF                                                                          HEATER1509                      
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    11
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ VARIABLES DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER VARIABLES0, HEATLOAD1                                                         HEATLOAD1                       
+   INPUT                 KIKI1.Q101 = KIKI1.Q101 + 3.                                                   HEATLOAD1                       
+   INPUT           HEADER VARIABLES0, C1A0                                                              C1A0                            
+   INPUT           F     CALL LOADQ_C1A0_1657040543                                                     C1A0                            
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    12
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ OPERATIONS BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OPERATIONS                                                                    GLOBAL                          
+   INPUT                 CALL TDPREBL   $ PLACE BEFORE BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
+   INPUT           BUILD DEFAULT,HEATER1501,HEATER1509,HEATLOAD1,KIKI1,KIKI2,KIKI3,MAIN,MINUS_X,MIN     GLOBAL                          
+   INPUT                +,C1A0,C1A1,C1A2                                                                GLOBAL                          
+   INPUT                 CALL TDPOSTBL   $ PLACE AFTER BUILD, CODE IN SUBROUTINE DATA                   GLOBAL                          
+   INPUT                 CALL TDHTR $ HOLD HEATER TEMPS FOR STEADY STATE                                GLOBAL                          
+   INPUT                 CALL STEADY                                                                    GLOBAL                          
+   INPUT                 CALL TDREL $ RELEASE HEATERS FOR TRANSIENT                                     GLOBAL                          
+   INPUT                 CALL TRANSIENT                                                                 GLOBAL                          
+   INPUT                 CALL TDHTOT $ OUTPUT HEATER SUMMARY                                            GLOBAL                          
+   INPUT                 CALL TDPOSTSL $ LOGIC IN SUBROUTINE DATA                                       GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    13
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ OUTPUT DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER OUTPUT CALLS, GLOBAL                                                          GLOBAL                          
+   INPUT                 CALL TPRINT('ALL')                                                             GLOBAL                          
+   INPUT                 IF(NSOL  .GT.  1 ) THEN                                                        GLOBAL                          
+   INPUT                     IF(TIMEN  .GE.  TIMEND) THEN                                               GLOBAL                          
+   INPUT                         CALL SAVE('ALL',0)                                                     GLOBAL                          
+   INPUT                     ELSE                                                                       GLOBAL                          
+   INPUT                         CALL SAVE('TR',0)                                                      GLOBAL                          
+   INPUT                     ENDIF                                                                      GLOBAL                          
+   INPUT                 ELSE IF( LOOPCT  .GT.  0 ) THEN                                                GLOBAL                          
+   INPUT                     CALL SAVE('ALL',0)                                                         GLOBAL                          
+   INPUT                 ENDIF                                                                          GLOBAL                          
+
+                            SYSTEMS IMPROVED NUMERICAL DIFFERENCING ANALYZER WITH FLUID INTEGRATOR           PAGE    14
+
+ MODEL = SINDA                                                               MLI_panel.dwg - Case Set 1
+ SUBROUTINE DATA BLOCK
+
+ CARD ORIGIN       12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 CURRENT MODEL
+
+   INPUT           HEADER SUBROUTINES                                                                   GLOBAL                          
+   INPUT                 SUBROUTINE TDHTR                                                               GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT                 RETURN                                                                         GLOBAL                          
+   INPUT                 END                                                                            GLOBAL                          
+   INPUT                 SUBROUTINE TDREL                                                               GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     CHARACTER*128 TEMP_LINE                                                        GLOBAL                          
+   INPUT                 CALL HNQCAL('ALL')                                                             GLOBAL                          
+   INPUT                 WRITE(NOUT,*) 'Heater Steady State Q Values:'                                  GLOBAL                          
+   INPUT           F     IF( ISBUILT( 'HEATER1501' ) ) THEN                                             GLOBAL                          
+   INPUT           F     CALL OUTLOG( 'Heater[HEATER1501]::343:' )                                      GLOBAL                          
+   INPUT           F     CALL OUTLOG( '    Steady State Proportional Heater Power Required:' )          GLOBAL                          
+   INPUT           F     WRITE(TEMP_LINE,*) '        ', PO343, 'W'                                      GLOBAL                          
+   INPUT           F     CALL OUTLOG( TEMP_LINE )                                                       GLOBAL                          
+   INPUT                     O__TD = 273.15 $ ON TEMP                                                   GLOBAL                          
+   INPUT           F         T__TD =   1. * T(INTNOD('MINUS_Y', 1501))                                  GLOBAL                          
+   INPUT           F     IF( T__TD  .LT.  O__TD ) THEN                                                  GLOBAL                          
+   INPUT           F         CALL OUTLOG( '    WARNING::Sense Temp Less Than On Temp' )                 GLOBAL                          
+   INPUT           F         WRITE(TEMP_LINE,*) '        Sense=', T__TD, '    On Temp=', O__TD          GLOBAL                          
+   INPUT           F         CALL OUTLOG( TEMP_LINE )                                                   GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     IF( ISBUILT( 'HEATER1509' ) ) THEN                                             GLOBAL                          
+   INPUT           F     CALL OUTLOG( 'Heater[HEATER1509]::344:' )                                      GLOBAL                          
+   INPUT           F     CALL OUTLOG( '    Steady State Proportional Heater Power Required:' )          GLOBAL                          
+   INPUT           F     WRITE(TEMP_LINE,*) '        ', PO344, 'W'                                      GLOBAL                          
+   INPUT           F     CALL OUTLOG( TEMP_LINE )                                                       GLOBAL                          
+   INPUT                     O__TD = 273.15 $ ON TEMP                                                   GLOBAL                          
+   INPUT           F         T__TD =   1. * T(INTNOD('MINUS_Y', 1509))                                  GLOBAL                          
+   INPUT           F     IF( T__TD  .LT.  O__TD ) THEN                                                  GLOBAL                          
+   INPUT           F         CALL OUTLOG( '    WARNING::Sense Temp Less Than On Temp' )                 GLOBAL                          
+   INPUT           F         WRITE(TEMP_LINE,*) '        Sense=', T__TD, '    On Temp=', O__TD          GLOBAL                          
+   INPUT           F         CALL OUTLOG( TEMP_LINE )                                                   GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDHTOT                                                              GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     IF( ISBUILT( 'HEATER1501' ) ) THEN                                             GLOBAL                          
+   INPUT           F     write(nout,*) 'Heater Summary for : ',                                         GLOBAL                          
+   INPUT           F    +'Heater[HEATER1501]::343'                                                      GLOBAL                          
+   INPUT           F     write(nout,*) '    On Time:     ', OT343, 's'                                  GLOBAL                          
+   INPUT           F     write(nout,*) '    Num Cycles:  ', CH343                                       GLOBAL                          
+   INPUT           F     write(nout,*) '    Total Energy: ', TP343, 'J'                                 GLOBAL                          
+   INPUT           F     write(nout,*) '    On Temp:  ', 273.15                                         GLOBAL                          
+   INPUT           F     write(nout,*) '    Off Temp: ', 283.15                                         GLOBAL                          
+   INPUT           F     write(nout,*) '    Power:    ', 3.                                             GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     IF( ISBUILT( 'HEATER1509' ) ) THEN                                             GLOBAL                          
+   INPUT           F     write(nout,*) 'Heater Summary for : ',                                         GLOBAL                          
+   INPUT           F    +'Heater[HEATER1509]::344'                                                      GLOBAL                          
+   INPUT           F     write(nout,*) '    On Time:     ', OT344, 's'                                  GLOBAL                          
+   INPUT           F     write(nout,*) '    Num Cycles:  ', CH344                                       GLOBAL                          
+   INPUT           F     write(nout,*) '    Total Energy: ', TP344, 'J'                                 GLOBAL                          
+   INPUT           F     write(nout,*) '    On Temp:  ', 273.15                                         GLOBAL                          
+   INPUT           F     write(nout,*) '    Off Temp: ', 278.15                                         GLOBAL                          
+   INPUT           F     write(nout,*) '    Power:    ', 10.                                            GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDHTRST                                                             GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT                 HT343 = 0.                                                                     GLOBAL                          
+   INPUT                 OT343 = 0.                                                                     GLOBAL                          
+   INPUT                 CH343 = 0.                                                                     GLOBAL                          
+   INPUT                 TP343 = 0.                                                                     GLOBAL                          
+   INPUT                 XP343 = 0.                                                                     GLOBAL                          
+   INPUT                 HT344 = 0.                                                                     GLOBAL                          
+   INPUT                 OT344 = 0.                                                                     GLOBAL                          
+   INPUT                 CH344 = 0.                                                                     GLOBAL                          
+   INPUT                 TP344 = 0.                                                                     GLOBAL                          
+   INPUT                 XP344 = 0.                                                                     GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPREBL                                                             GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPOSTBL                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE TDPOSTSL                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           F     SUBROUTINE BASEPLOT                                                            GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           C INSERT C1A0.hra                                                                    GLOBAL                          
+   INPUT           F     RECURSIVE SUBROUTINE LOADQ_C1A0_1657040543                                     GLOBAL                          
+   INPUT           F     USE BINARY_READER_MOD                                                          GLOBAL                          
+   INPUT                 CALL COMMON                                                                    GLOBAL                          
+   INPUT           F     INTEGER NVAR__TD                                                               GLOBAL                          
+   INPUT           F     REAL, ALLOCATABLE ::  DATA__TD(:)                                              GLOBAL                          
+   INPUT           F     DATA NVAR__TD /-1/                                                             GLOBAL                          
+   INPUT           F     SAVE NVAR__TD, DATA__TD                                                        GLOBAL                          
+   INPUT           F     IF( NVAR__TD  .LT.  0 ) THEN                                                   GLOBAL                          
+   INPUT           F         ALLOCATE (DATA__TD(763))                                                   GLOBAL                          
+   INPUT           F         CALL LOAD_BINARY_SINGLET_ARRAYS(                                           GLOBAL                          
+   INPUT           F    +        'C1A0.hra_bin'                                                         GLOBAL                          
+   INPUT           F    +    , DATA__TD)                                                                GLOBAL                          
+   INPUT           F         NVAR__TD = 1                                                               GLOBAL                          
+   INPUT           F     ENDIF                                                                          GLOBAL                          
+   INPUT           F     DATA__TD(1 + 21 + 1) =                                                         GLOBAL                          
+   INPUT                +     C1A0.A(5+1)                                                               GLOBAL                          
+   INPUT           F     CALL LOADQ('C1A0',1,2,                                                         GLOBAL                          
+   INPUT           F    +    DATA__TD(1+7),                                                             GLOBAL                          
+   INPUT           F    +    DATA__TD(1+14),                                                            GLOBAL                          
+   INPUT           F    +    DATA__TD(1),                                                               GLOBAL                          
+   INPUT           F    +    DATA__TD(1+21),                                                            GLOBAL                          
+   INPUT                +    C1A0.A4)                                                                   GLOBAL                          
+   INPUT           F     RETURN                                                                         GLOBAL                          
+   INPUT           F     END                                                                            GLOBAL                          
+   INPUT           C INSERT C1A1.k_in                                                                   GLOBAL                          
+   INPUT           CINSERT C1A1.k_in                                                                    GLOBAL                          
+   INPUT           C INSERT C1A2.k_in                                                                   GLOBAL                          
+   INPUT           CINSERT C1A2.k_in                                                                    GLOBAL                          

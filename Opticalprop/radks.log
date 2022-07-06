@@ -1,0 +1,9 @@
+[ AutoCAD - Tue Jun 21 13:12:33 2022  ]----------------------------------------
+*** RADCAD RAYTRACE RADK RUN START for database Internal-RcOptics.rck
+Creating new database named Internal-RcOptics.rck
+Using regular optical properties
+Fixed RadCAD
+Fixed license found.
+Time to calculate radk = 0.21 sec
+Outputting SINDA/FLUINT radks to file SINDA.K...
+Total elapsed time for calculations and output = 0.90 sec
